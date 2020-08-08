@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+</head>
+<link rel="stylesheet" href="../css/uikit.min.css" />
+<script src="../js/uikit.min.js"></script>
+<script src="../js/uikit-icons.min.js"></script>
+<script src="../js/"></script>
+<link rel="stylesheet" href="../css/styles.css" />
+<script src="https://kit.fontawesome.com/4ec8457620.js" crossorigin="anonymous"></script>
+
+<body>
+    <nav class="uk-navbar-container uk-margin" style="background-color: black;" uk-navbar>
+        <a class="uk-navbar-toggle uk-hidden-m" uk-toggle="target: #offcanvas-nav-primary" uk-navbar-toggle-icon></a>
+        <div class="uk-navbar-center">
+            <div class="uk-navbar-center-left uk-visible@m">
+                <div>
+                    <ul class="uk-navbar-nav">
+                        <li class=""><a href="../views/about.html">About</a></li>
+                        <li class=""><a href="../views/skills.html">Skills</a></li>
+                        <li>
+                            <a href="../views/portfolio.html">Portfolio</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img data-src="assets/logos/logo.png" class="uk-navbar-item" width="100" height="150" href="#" uk-img></img>
+            <div class="uk-navbar-center-right uk-visible@m">
+                <div>
+                    <ul class="uk-navbar-nav">
+                        <li><a href="../views/contact.html">Contact</a></li>
+                        <li><a href="../views/media.html">Media</a></li>
+                        <li class=""><a href="../views/travels.html">Travels</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- OFF CANVAS -->
+    <nav id="offcanvas-nav-primary" uk-offcanvas="overlay: true; mode: slide; flip: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+            <!-- navbar content her -->
+            <!-- A - logo -->
+            <a class="uk-align-left uk-logo" href="#">Logo - offcanvas</a>
+            <!-- B - nav -->
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                <li class="uk-active"><a href="#">Active - offcanvas</a></li>
+                <li class="uk-parent">
+                    <a href="#">Parent - offcanvas</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="#">Child one - offcanvas</a></li>
+                        <li><a href="#">Child two - offcanvas</a></li>
+                    </ul>
+                </li>
+                <li class=""><a href="#">ITEM - offcanvas</a></li>
+            </ul>
+            <!--contact us -->
+            <div class="uk-margin-large-top">
+                <hr>
+                <span uk-icon="icon: phone"></span>
+                <a class="uk-link-text" href="#">+972 3434 3435</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="uk-section uk-section-medium">
+        <div class="uk-container uk-container-expand">
+            <div class="uk-child-width-1-2@m" uk-grid="">
+                <div>
+                    <div uk-grid="">
+                        <div class="uk-width-auto"><span uk-icon="icon:user;ratio:2"></span></div>
+                        <div class="uk-width-expand">
+                            <h3 class="uk-text-uppercase uk-text-truncate">Bilal</h3>
+                            <p class="uk-text-justify">I am a 23-year old software engineer,
+                                born and raised
+                                in Southern California. I develop exceptional web applications to solve complex problems
+                                with simple and efficient backends. I love building scalable solutions and tackling
+                                real-world problems, technical and business-related.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div uk-grid="">
+                        <div class="uk-width-auto"><span uk-icon="icon:quote-right;ratio:2"></span></div>
+                        <div class="uk-width-expand">
+                            <h3 class="uk-text-uppercase uk-text-truncate">Motto</h3>
+                            <p class="uk-text-justify">"Something about the struggle so divine, this type of love is
+                                hard
+                                to define"</p>
+                            <p class="uk-text-justify">Embrace the struggle no matter what it may be. You don't choose
+                                where you start off in life but you control where you end up, so fall in love with the
+                                process. We all have struggles, in our careers, school, and personal life. Our struggles
+                                make us who we are and how we overcome them. If there is no struggle, there is no
+                                growth.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div uk-grid="">
+                        <div class="uk-width-auto"><span uk-icon="icon:happy;ratio:2"></span></div>
+                        <div class="uk-width-expand">
+                            <h3 class="uk-text-uppercase uk-text-truncate">The Roots</h3>
+                            <p class="uk-text-justify">Born in Anaheim, California - I attended community college and
+                                took my first computer science classes at Fullerton College, and found my passion for
+                                coding and building through Scott Edwards, my first and best CS professor. Later, I
+                                worked at
+                                Ultra Mobile as a software engineer intern, where I had my first taste of
+                                enterprise-level software development while studying at University of California, Irvine
+                                as a transfer. That's the beginning to my story and career, pursuing my passion as a 17
+                                year old community college student and pursuing and developing my technical skillset.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div uk-grid="">
+                        <div class="uk-width-auto"><span uk-icon="icon:bolt;ratio:2"></span></div>
+                        <div class="uk-width-expand">
+                            <h3 class="uk-text-uppercase uk-text-truncate">Freetime</h3>
+                            <p class="uk-text-justify">In my downtime, I love travelling to new destinations and
+                                countries. Currently my favorite cities are London, Prague, and Barcelona. I'm also a
+                                hooper and enjoy basketball in all forms. Self-growth is invaluable and important to me,
+                                so I enjoy reading books for leisure and also to stay up-to-date on tech. Some of my
+                                favorite reads include Oliver Twist, Adventures of Sherlock Holmes, and the Alchemist.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
