@@ -6,26 +6,26 @@
    CSS Custom Properties (Design Tokens)
    -------------------------------------------------------------------------- */
 :root {
-  /* Colors - Dark Theme */
-  --color-bg-primary: #0a0a0b;
-  --color-bg-secondary: #111113;
-  --color-bg-tertiary: #18181b;
-  --color-bg-card: #1c1c1f;
-  --color-bg-card-hover: #242428;
+  /* Colors - Minimal Black & White Theme */
+  --color-bg-primary: #000000;
+  --color-bg-secondary: #0a0a0a;
+  --color-bg-tertiary: #141414;
+  --color-bg-card: #0f0f0f;
+  --color-bg-card-hover: #1a1a1a;
 
   /* Text Colors */
-  --color-text-primary: #fafafa;
-  --color-text-secondary: #a1a1aa;
-  --color-text-muted: #71717a;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #888888;
+  --color-text-muted: #555555;
 
-  /* Accent Colors */
-  --color-accent: #3b82f6;
-  --color-accent-hover: #60a5fa;
-  --color-accent-subtle: rgba(59, 130, 246, 0.1);
+  /* Accent Colors - White/Gray for minimal look */
+  --color-accent: #ffffff;
+  --color-accent-hover: #e0e0e0;
+  --color-accent-subtle: rgba(255, 255, 255, 0.08);
 
   /* Borders */
-  --color-border: #27272a;
-  --color-border-hover: #3f3f46;
+  --color-border: #1f1f1f;
+  --color-border-hover: #333333;
 
   /* Typography Scale (1.25 ratio) */
   --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -81,11 +81,11 @@
   --radius-full: 9999px;
 
   /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
-  --shadow-glow: 0 0 40px rgba(59, 130, 246, 0.15);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.8);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.6), 0 2px 4px -2px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.6), 0 4px 6px -4px rgba(0, 0, 0, 0.6);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 8px 10px -6px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 30px rgba(255, 255, 255, 0.05);
 
   /* Transitions */
   --transition-fast: 150ms ease;
@@ -364,7 +364,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   max-width: 800px;
   height: 600px;
-  background: radial-gradient(ellipse at center, rgba(59, 130, 246, 0.08) 0%, transparent 70%);
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.03) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -443,14 +443,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-primary {
   background: var(--color-accent);
-  color: white;
+  color: #000000;
   border-color: var(--color-accent);
 }
 
 .btn-primary:hover {
   background: var(--color-accent-hover);
   border-color: var(--color-accent-hover);
-  color: white;
+  color: #000000;
   transform: translateY(-2px);
   box-shadow: var(--shadow-glow);
 }
@@ -504,11 +504,10 @@ h1, h2, h3, h4, h5, h6 {
 .about-image-wrapper::before {
   content: '';
   position: absolute;
-  inset: -8px;
-  background: linear-gradient(135deg, var(--color-accent) 0%, transparent 50%);
+  inset: -1px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, transparent 50%);
   border-radius: var(--radius-2xl);
   z-index: -1;
-  opacity: 0.3;
 }
 
 .about-content {
@@ -619,7 +618,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .skill-item:hover {
   background: var(--color-accent-subtle);
-  color: var(--color-accent);
+  color: var(--color-text-primary);
 }
 
 .skill-item i {
@@ -699,9 +698,10 @@ h1, h2, h3, h4, h5, h6 {
 .project-tag {
   font-size: var(--font-size-xs);
   font-family: var(--font-family-mono);
-  color: var(--color-accent);
+  color: var(--color-text-secondary);
   padding: var(--space-1) var(--space-2);
-  background: var(--color-accent-subtle);
+  background: var(--color-bg-tertiary);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
 }
 
@@ -776,7 +776,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-text a:hover {
-  color: var(--color-accent);
+  color: var(--color-text-primary);
 }
 
 /* --------------------------------------------------------------------------
